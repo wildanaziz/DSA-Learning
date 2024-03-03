@@ -39,7 +39,7 @@ For any issues or questions, please refer to the documentation or open an issue 
 ## Authors
 
 * Wildan Aziz
-    * Instagram: @wildannaziz
+    * Instagram: [@wildannaziz](https://instagram.com/wildannaziz)
 
 ## Version History
 
