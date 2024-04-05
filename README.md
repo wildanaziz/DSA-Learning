@@ -45,3 +45,6 @@ For any issues or questions, please refer to the documentation or open an issue 
 
 * 0.1
     * Initial Release
+* 0.2
+    * Simple Project Playlist Music
+
