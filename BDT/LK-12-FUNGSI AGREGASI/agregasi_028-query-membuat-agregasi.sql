@@ -1,3 +1,5 @@
+USE agregasi_028;
+
 SELECT ESSN as 'Kode Pegawai', PNo as 'Nomor Proyek', SUM(Jam) as 'Total Jam'
 FROM Bekerja
 GROUP BY ESSN, PNo, Jam;
