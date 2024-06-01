@@ -1,3 +1,9 @@
+/* Nama: Wildan Aziz Hidayat
+   NIM: 235150301111028
+   Kelas: Teknik Komputer B
+   Tugas: Tugas Graph BFS-DFS
+*/
+
 #include <iostream>
 #include <cstdlib>
 
@@ -84,7 +90,7 @@ Node* deleteNode(Node* root, int key) {
 Node *minNode(Node *subright){
     Node* current = subright;
 
-    // Loop down to find the leftmost leaf
+    // buat nyari nilai terkecil
     while (current && current->left != nullptr)
         current = current->left;
 
@@ -97,15 +103,15 @@ Node *deleteMinRightNode(Node *root, int key){
     }
 
     if (key < root->key) {
-        root->left = deleteNode(root->left, key);
+        root->left = deleteMinRightNode(root->left, key);
     } else if (key > root->key) {
-        root->right = deleteNode(root->right, key);
+        root->right = deleteMinRightNode(root->right, key);
     } else {
         // kalau misal dua anak
         if (root->left != nullptr && root->right != nullptr) {
             Node* temp = minNode(root->right);
             root->key = temp->key;
-            root->right = deleteNode(root->right, temp->key);
+            root->right =  deleteMinRightNode(root->right, temp->key);
         } else { // kalau misal satu anak
             Node* temp = root;
             if (root->left == nullptr) {
