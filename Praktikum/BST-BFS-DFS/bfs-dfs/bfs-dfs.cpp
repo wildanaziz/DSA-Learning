@@ -1,3 +1,9 @@
+/* Nama: Wildan Aziz Hidayat
+   NIM: 235150301111028
+   Kelas: Teknik Komputer B
+   Tugas: Tugas Graph BFS-DFS
+*/
+
 #include <iostream>
 #include <string>
 #include <vector>
